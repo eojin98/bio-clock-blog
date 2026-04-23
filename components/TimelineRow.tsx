@@ -21,24 +21,40 @@ export default function TimelineRow({ entry, isExpanded, onToggle }: Props) {
         </td>
         <td className="py-3 px-4 font-medium text-zinc-900 dark:text-zinc-100">
           {entry.title}
-          <span className="ml-2 text-zinc-300 dark:text-zinc-600 text-xs select-none">
+          <span className="ml-1.5 text-zinc-300 dark:text-zinc-600 text-xs select-none">
             {isExpanded ? '▲' : '▼'}
           </span>
         </td>
-        <td className="py-3 px-4 text-sm text-zinc-500 dark:text-zinc-400 hidden sm:table-cell">
-          {entry.description}
+        <td className="py-3 px-4 text-sm text-zinc-500 dark:text-zinc-400 hidden sm:table-cell leading-relaxed">
+          {entry.summary}
         </td>
       </tr>
+
       {isExpanded && (
-        <tr className="bg-zinc-50 dark:bg-zinc-900/50">
-          <td colSpan={3} className="px-4 py-3">
-            <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-2 sm:hidden">
-              {entry.description}
+        <tr className="bg-zinc-50/80 dark:bg-zinc-900/50">
+          <td colSpan={3} className="px-4 py-4 space-y-3">
+            <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed sm:hidden">
+              {entry.summary}
             </p>
-            {entry.slugs.length > 0 ? (
-              <div className="flex flex-wrap items-center gap-2">
+
+            <div className="flex gap-2">
+              <span className="shrink-0 text-xs font-semibold text-emerald-600 dark:text-emerald-400 pt-0.5">
+                실천 팁
+              </span>
+              <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">{entry.tip}</p>
+            </div>
+
+            <div className="flex gap-2">
+              <span className="shrink-0 text-xs font-semibold text-zinc-400 dark:text-zinc-500 pt-0.5">
+                출처
+              </span>
+              <p className="text-xs text-zinc-400 dark:text-zinc-500 italic leading-relaxed">{entry.source}</p>
+            </div>
+
+            {entry.relatedPosts.length > 0 && (
+              <div className="flex flex-wrap items-center gap-2 pt-0.5">
                 <span className="text-xs text-zinc-400 dark:text-zinc-500">관련 글</span>
-                {entry.slugs.map((slug) => (
+                {entry.relatedPosts.map((slug) => (
                   <Link
                     key={slug}
                     href={`/posts/${slug}`}
@@ -49,8 +65,6 @@ export default function TimelineRow({ entry, isExpanded, onToggle }: Props) {
                   </Link>
                 ))}
               </div>
-            ) : (
-              <p className="text-xs text-zinc-400 dark:text-zinc-500">관련 글이 준비 중입니다.</p>
             )}
           </td>
         </tr>

@@ -1,8 +1,16 @@
 export interface TimelineEntry {
   time: string
   title: string
-  description: string
-  slugs: string[]
+  summary: string
+  tip: string
+  source: string
+  relatedPosts: string[]
+}
+
+export interface TimelineGroup {
+  label: string
+  emoji: string
+  entries: TimelineEntry[]
 }
 
 export interface Post {

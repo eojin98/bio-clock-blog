@@ -1,38 +1,178 @@
 [
   {
-    "time": "06:00–08:00",
-    "title": "코르티솔 각성 피크",
-    "description": "기상 직후 코르티솔 수치가 최고조에 달해 에너지와 집중력이 높아지는 시간대입니다.",
-    "slugs": ["morning-cortisol"]
+    "time": "00:00",
+    "title": "세포 재생 피크",
+    "summary": "세포가 하루 중 가장 빠르게 리뉴얼되는 시간. 대사열과 활성산소가 급감하며 조직 복구 신호가 강화됩니다.",
+    "tip": "강한 조명과 블루라이트 줄이기, 간접조명만 켜고 방을 어둡게 유지",
+    "source": "The circadian clock mediates daily bursts of cell differentiation. PNAS (2022) 119:33",
+    "relatedPosts": ["midnight-cell-regeneration"]
   },
   {
-    "time": "09:00–11:00",
-    "title": "인지 능력 최고조",
-    "description": "체온과 코르티솔이 최적 수준을 유지하며 논리적 사고와 단기 기억이 가장 활성화됩니다.",
-    "slugs": ["afternoon-focus"]
+    "time": "01:00-03:00",
+    "title": "면역 가동 + 성장호르몬 분비",
+    "summary": "CD4 T세포가 IFN-γ와 CD40L을 가장 활발히 분비하고, 수면 시작 70분 전후로 성장호르몬 분비 피크가 발생합니다.",
+    "tip": "자정 이전 취침, 소등과 낮은 호흡(4초 들이마시고 6초 내쉬기)",
+    "source": "Circadian Clocks in Mouse and Human CD4+ T Cells. PLOS ONE (2011) 6:12 / GH 분비는 수면 구조 의존적",
+    "relatedPosts": ["deep-sleep-immune-growth"]
   },
   {
-    "time": "12:00–14:00",
-    "title": "소화 에너지 집중",
-    "description": "식후 부교감신경이 활성화되며 소화에 에너지가 집중되어 집중력이 일시 저하됩니다.",
-    "slugs": []
+    "time": "03:00-05:00",
+    "title": "신체 최저점 + 폐 기능 저하",
+    "summary": "심박·체온·대사가 하루 중 최저점에 도달하고 FEV1(폐활량)이 일중 최고치 대비 5~10% 낮아져 호흡기가 예민해집니다.",
+    "tip": "실내 온도·습도 일정하게 유지, 찬 공기 노출 피하기",
+    "source": "Cell Death Discovery (2024) 10:199 / 하버드·BWH 생체리듬 연구",
+    "relatedPosts": ["dawn-low-point"]
   },
   {
-    "time": "15:00–17:00",
-    "title": "근육 반응속도 피크",
-    "description": "체온이 하루 중 가장 높아지고 근육 반응속도와 심폐 기능이 최고 수준에 도달합니다.",
-    "slugs": []
+    "time": "05:00",
+    "title": "세포 전사 리듬 전환",
+    "summary": "수면-각성 전환기로 접어들며 유전자 발현 리듬이 가장 섬세하게 바뀌는 구간. 잘못된 수면 타이밍이 전사체 리듬을 무너뜨릴 수 있습니다.",
+    "tip": "일정한 수면 시간 유지, 알람 불규칙성 줄이기",
+    "source": "Mistimed sleep disrupts circadian regulation of the human transcriptome. PNAS (2014) 111:6",
+    "relatedPosts": ["transcriptome-rhythm"]
   },
   {
-    "time": "18:00–20:00",
-    "title": "멜라토닌 분비 시작",
-    "description": "일몰 후 빛 자극이 감소하면서 뇌 속 송과체가 멜라토닌을 분비하기 시작합니다.",
-    "slugs": ["evening-melatonin"]
+    "time": "06:00",
+    "title": "멜라토닌 감소 + 각성 전환",
+    "summary": "기상 직후 멜라토닌이 감소하고 코르티솔이 빠르게 상승합니다. 뇌·면역계·대사계가 동시에 각성 모드로 전환되는 신호.",
+    "tip": "커튼 열어 자연광 받기, 바로 눕지 말고 가볍게 움직이기",
+    "source": "The Cortisol Awakening Response. Endocrine Reviews (2025) 46:1",
+    "relatedPosts": ["wakeup-transition"]
   },
   {
-    "time": "22:00–02:00",
-    "title": "심층 수면 회복 구간",
-    "description": "성장호르몬 분비가 활발해지고 세포 회복과 기억 공고화가 이루어지는 핵심 수면 구간입니다.",
-    "slugs": []
+    "time": "07:00",
+    "title": "코르티솔 각성 반응 (CAR) 피크",
+    "summary": "기상 후 30~45분 사이 코르티솔이 평균 50~156% 급증하며 심박·혈당·체온·에너지 대사가 하루 시작 모드로 맞춰집니다.",
+    "tip": "기상 후 10분 햇빛 쬐기, 일정한 기상 시간 유지",
+    "source": "The Cortisol Awakening Response. Endocrine Reviews (2025) 46:1",
+    "relatedPosts": ["cortisol-awakening-response"]
+  },
+  {
+    "time": "08:00",
+    "title": "면역 리듬 전환",
+    "summary": "아침 코르티솔 영향으로 보조 T세포 등 면역세포가 혈액에서 조직으로 이동하며 면역 분포가 재편됩니다.",
+    "tip": "과도한 자극 피하기, 가벼운 스트레칭과 충분한 아침 식사",
+    "source": "Influence of circadian rhythm on the determination of the IMMune Age indeX. Frontiers in Aging (2025) 6:1716985",
+    "relatedPosts": ["morning-immune-shift"]
+  },
+  {
+    "time": "09:00",
+    "title": "몰입 준비 구간",
+    "summary": "전두엽 기능이 활성화되기 시작하고 각성 리듬이 본격 상승. 하루 일정의 우선순위를 정리하기 좋은 시간.",
+    "tip": "오늘 가장 중요한 업무 리스트 정리, 핵심 과제 배치",
+    "source": "인지 리듬 기반 구성 (10시 피크 이전 준비 구간)",
+    "relatedPosts": ["focus-preparation"]
+  },
+  {
+    "time": "10:00",
+    "title": "인지능력 최고조",
+    "summary": "주의력과 기억력이 오전 8시 대비 약 12% 향상되고, 반응속도가 350ms → 290ms로 빨라집니다. 복합 사고에 가장 적합.",
+    "tip": "중요한 회의·시험공부 배치, 어려운 파트는 첫 30분에",
+    "source": "Identifying the Best Times for Cognitive Functioning. Frontiers in Human Neuroscience (2017) 11:188",
+    "relatedPosts": ["morning-cognitive-peak"]
+  },
+  {
+    "time": "11:00",
+    "title": "논리적 사고 유지",
+    "summary": "단기 기억력과 정보 처리 속도가 고점에 머무는 시간. 전략적 판단과 문제 해결에 유리합니다.",
+    "tip": "전략 회의, 복잡한 문제 해결, 장문 글쓰기 배치",
+    "source": "인지 리듬 지속 구간 (10시 피크 연장)",
+    "relatedPosts": ["logical-thinking-window"]
+  },
+  {
+    "time": "12:00",
+    "title": "혈액 농축 + 에너지 균형",
+    "summary": "적혈구·헤모글로빈·헤마토크릿이 정오 전후 상대적 최고치를 보이며 산소 운반이 안정. 머리가 맑아지는 구간.",
+    "tip": "물 한 잔으로 혈액 흐름 유지, 가벼운 정리 업무 배치",
+    "source": "Effects of circadian variation on hematological parameters. Int J Lab Hematology (2021) 43:5",
+    "relatedPosts": ["noon-blood-balance"]
+  },
+  {
+    "time": "13:00",
+    "title": "포스트 런치 딥 (점심 후 졸림)",
+    "summary": "이른 오후 각성과 수행이 일시적으로 떨어지는 구간. 20~40분 낮잠이 지속 주의력을 개선합니다.",
+    "tip": "20~40분 짧은 낮잠, 낮잠 후 20분은 천천히 깨기",
+    "source": "Lab of Light and Physio-psychological Health 낮잠 연구",
+    "relatedPosts": ["post-lunch-dip"]
+  },
+  {
+    "time": "14:00",
+    "title": "인지 저하 회복 구간",
+    "summary": "수면 압력 누적으로 주의력이 자연스럽게 감소. 단순 업무와 짧은 움직임으로 리듬을 회복하기 좋습니다.",
+    "tip": "단순 업무 배치, 5~10분 가볍게 걷기",
+    "source": "포스트 런치 딥 연장 구간",
+    "relatedPosts": ["afternoon-recovery"]
+  },
+  {
+    "time": "15:00",
+    "title": "근육 활성 증가",
+    "summary": "중심체온이 상승하며 근육 내 에너지 대사가 활발해지고 액틴-미오신 결합 효율이 증가. 힘과 파워 발휘가 쉬워집니다.",
+    "tip": "스트레칭, 유연성 운동 시작, 워밍업 부담 감소",
+    "source": "Circadian Rhythms in Exercise Performance. J Sports Sci Med (2011) 10:4",
+    "relatedPosts": ["muscle-activation"]
+  },
+  {
+    "time": "16:00",
+    "title": "신체·인지 절정",
+    "summary": "체온이 평균보다 약 1°C 상승하고 도파민·노르아드레날린이 활발히 작용해 집중력과 신경근육 반응속도가 7~10% 향상됩니다.",
+    "tip": "중요한 업무·창의적 과제 배치, 스트레칭으로 리듬 활성화",
+    "source": "The effects of time of day and chronotype. Sports Medicine – Open (2018) 4:47",
+    "relatedPosts": ["afternoon-peak"]
+  },
+  {
+    "time": "17:00",
+    "title": "식욕 상승 시작",
+    "summary": "생체시계가 만드는 배고픔 리듬. 저녁으로 갈수록 식욕이 최대 17% 상승하며 단맛·짠맛·전분 욕구도 14~25% 증가합니다.",
+    "tip": "물 한 컵 먼저 마시기, 간식 루틴으로 폭식 방지, 10분 걷고 저녁 시작",
+    "source": "The Internal Circadian Clock Increases Hunger and Appetite. Obesity (2013) 21:3",
+    "relatedPosts": ["evening-appetite-rise"]
+  },
+  {
+    "time": "18:00",
+    "title": "운동 수행 능력 최고",
+    "summary": "근육 온도와 각성 수준이 최고조. 단기 고강도 운동 성능이 평균 1.7~17.5% 향상되고 아침 대비 최대 29% 우수한 수행.",
+    "tip": "웨이트·고강도 운동 배치, 가벼운 워밍업으로 시작",
+    "source": "Time-of-Day Effects on Short-Duration Maximal Exercise. Scientific Reports (2020) 10:9485",
+    "relatedPosts": ["evening-exercise-peak"]
+  },
+  {
+    "time": "19:00",
+    "title": "저녁 혈압 재상승 + 불안 증가",
+    "summary": "기상 후 9~12시간 구간에 수축기 혈압이 133.8 → 137.0 mmHg로 재상승. 저녁형 크로노타입은 불안과 레이싱 생각이 증가합니다.",
+    "tip": "느린 호흡 10회(4초 들이마시고 6초 내쉬기), 격한 활동 줄이기, 카페인 금지",
+    "source": "J Clin Hypertens (2019) 21:11 / Psychiatry Research (2024) 338:116006",
+    "relatedPosts": ["evening-blood-pressure", "evening-anxiety"]
+  },
+  {
+    "time": "20:00",
+    "title": "지방 저장 모드",
+    "summary": "인슐린 민감도가 낮아지고 같은 식사라도 중성지방이 낮보다 빠르고 크게 상승. 저장 모드로 전환되기 쉬운 시간.",
+    "tip": "8PM 이전 식사 마무리, 늦어지면 가볍게, 식후 가벼운 움직임",
+    "source": "Time-of-Day-Dependent Physiological Responses to Meal and Exercise. Frontiers in Nutrition (2020) 7:18",
+    "relatedPosts": ["evening-fat-storage"]
+  },
+  {
+    "time": "21:00",
+    "title": "체온 하강 + 대사 리듬 정리",
+    "summary": "핵심체온이 하강하며 대사 리듬의 강도가 정리되기 시작. 체온 진폭이 클수록 대사체 리듬이 강하게 나타납니다.",
+    "tip": "조명 낮추기, 샤워·운동 가볍게 마무리, 취침 시간 고정",
+    "source": "Higher central circadian temperature amplitude. Scientific Reports (2024) 14:16796",
+    "relatedPosts": ["night-rhythm-transition"]
+  },
+  {
+    "time": "22:00",
+    "title": "자율신경 전환 (부교감 우위)",
+    "summary": "야간 혈압이 주간 대비 10~20% 낮아지고 부교감신경이 우위로 전환. 심박·호흡수가 감소하며 휴식 모드로 진입합니다.",
+    "tip": "취침 전 루틴 수행, 자극 최소화, 호흡 느리게",
+    "source": "스탠퍼드 수면·자율신경 생리 리뷰",
+    "relatedPosts": ["parasympathetic-shift"]
+  },
+  {
+    "time": "23:00",
+    "title": "입면 유도 + 체온 최저점 접근",
+    "summary": "체온 하강이 수면 개시를 돕는 핵심 신호로 작용하는 시점. 완전한 어둠과 조용한 환경이 입면을 촉진합니다.",
+    "tip": "독서나 일기 쓰기, 완전한 소등, 화면 멀리하기",
+    "source": "체온 리듬 기반 수면 개시",
+    "relatedPosts": ["sleep-onset"]
   }
 ]
