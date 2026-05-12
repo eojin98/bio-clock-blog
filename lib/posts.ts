@@ -19,15 +19,19 @@ export function getAllPosts(): Post[] {
         date: data.date as string,
         timeSlot: data.timeSlot as string,
         summary: data.summary as string,
+        draft: (data.draft as boolean) ?? false,
       }
     })
+    .filter((p) => !p.draft)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
-export function getPostBySlug(slug: string): { meta: Post; content: string } {
+export function getPostBySlug(slug: string): { meta: Post; content: string } | null {
   const filepath = path.join(POSTS_DIR, `${slug}.mdx`)
+  if (!fs.existsSync(filepath)) return null
   const raw = fs.readFileSync(filepath, 'utf-8')
   const { data, content } = matter(raw)
+  if (data.draft === true) return null
   return {
     meta: {
       slug,
@@ -35,6 +39,7 @@ export function getPostBySlug(slug: string): { meta: Post; content: string } {
       date: data.date as string,
       timeSlot: data.timeSlot as string,
       summary: data.summary as string,
+      draft: false,
     },
     content,
   }

@@ -14,17 +14,17 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params
-  const post = getAllPosts().find((p) => p.slug === slug)
-  if (!post) return {}
-  return { title: post.title, description: post.summary }
+  const result = getPostBySlug(slug)
+  if (!result) return {}
+  return { title: result.meta.title, description: result.meta.summary }
 }
 
 export default async function PostPage({ params }: Props) {
   const { slug } = await params
-  const posts = getAllPosts()
-  if (!posts.find((p) => p.slug === slug)) notFound()
+  const result = getPostBySlug(slug)
+  if (!result) notFound()
 
-  const { meta, content } = getPostBySlug(slug)
+  const { meta, content } = result
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-12">
@@ -34,7 +34,6 @@ export default async function PostPage({ params }: Props) {
       >
         ← 홈으로
       </Link>
-
       <header className="mb-8">
         <div className="mb-3">
           <PostMeta date={meta.date} timeSlot={meta.timeSlot} />
@@ -42,13 +41,9 @@ export default async function PostPage({ params }: Props) {
         <h1 className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50 leading-snug">
           {meta.title}
         </h1>
-        <p className="mt-3 text-zinc-500 dark:text-zinc-400 text-base">
-          {meta.summary}
-        </p>
+        <p className="mt-3 text-zinc-500 dark:text-zinc-400 text-base">{meta.summary}</p>
       </header>
-
       <hr className="border-zinc-100 dark:border-zinc-800 mb-8" />
-
       <article className="prose prose-zinc dark:prose-invert max-w-none prose-headings:font-bold prose-a:text-indigo-600 dark:prose-a:text-indigo-400">
         <MDXRemote source={content} />
       </article>

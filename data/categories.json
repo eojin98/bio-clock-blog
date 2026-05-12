@@ -1,0 +1,7 @@
+[
+  { "id": "hormones", "name": "호르몬", "description": "코르티솔, 멜라토닌 등 호르몬 관련 글" },
+  { "id": "morning", "name": "아침", "description": "기상 직후 시간대 글" },
+  { "id": "sleep", "name": "수면", "description": "수면 질·구조·리듬 관련 글" },
+  { "id": "exercise", "name": "운동", "description": "신체 활동·운동 타이밍 관련 글" },
+  { "id": "nutrition", "name": "영양", "description": "식사 타이밍·영양소 리듬 관련 글" }
+]

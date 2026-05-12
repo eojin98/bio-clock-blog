@@ -19,4 +19,24 @@ export interface Post {
   date: string
   timeSlot: string
   summary: string
+  draft?: boolean
+}
+
+export interface AdminPost extends Post {
+  categories: string[]
+  sourceTitle?: string
+  sourceDOI?: string
+  sourceUrl?: string
+}
+
+export interface Category {
+  id: string
+  name: string
+  description: string
+}
+
+export interface GitSyncResult {
+  fileWritten: boolean
+  gitSynced: boolean
+  gitError?: string
 }
